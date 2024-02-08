@@ -6,6 +6,10 @@ router.get('/builder', function(req, res, next) {
   res.render('./builder/index', { title: 'TecHub' });
 });
 
+router.get('/', (req, res)=>{
+  res.render('./builder/index', {title: 'TecHub'});
+})
+
 /* GET about page. */
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'TecHub' });
